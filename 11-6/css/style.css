@@ -46,6 +46,10 @@ body {
   margin: 0;
 }
 
+.column .column-card-list .card:hover {
+  cursor: pointer;
+}
+
 .column .column-card-list .card button {
   border: 1px solid #000;
   border-radius: 10px;
@@ -65,5 +69,15 @@ body {
   font-size: 12px;
   font-weight: 300;
   border-radius: 7px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-delete:hover,
+.add-card:hover {
+  background-color: #F9F5FF;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
