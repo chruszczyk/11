@@ -24,11 +24,11 @@ $(function() {
 
 			$columnDelete.click(function() {
 				self.removeColumn();
-		});
+			});
 			
 			$columnAddCard.click(function() {
 				self.addCard(new Card(prompt("Enter the name of the card")));
-		});
+			});
 			
 			$column.append($columnTitle)
 				.append($columnDelete)
@@ -87,10 +87,10 @@ $(function() {
 	};
 
 	function initSortable() {
-	    $('.column-card-list').sortable({
-		 connectWith: '.column-card-list',
-		 placeholder: 'card-placeholder'
-	   }).disableSelection();
+		$('.column-card-list').sortable({
+			connectWith: '.column-card-list',
+			placeholder: 'card-placeholder'
+		}).disableSelection();
 	}
 
 	$('.create-column').click(function(){
